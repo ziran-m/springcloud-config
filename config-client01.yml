@@ -6,7 +6,7 @@ spring:
 spring:
   profiles: dev
 server:
-  port:8080
+  port:8081
 
 ##指定eureka的访问路径
 eureka:

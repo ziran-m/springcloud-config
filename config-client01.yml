@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+server:
+  port:8080
+
+##指定eureka的访问路径
+eureka:
+  client:
+  service-url:
+    defaultZone: http://root01:root01@localhost:5121/eureka
+
+
+#开启sentinel降级处理
+feign:
+  hystrix:
+    enabled: true
+---
+spring:
+  profiles: test
+
+server:
+  port:8081
+
+##指定eureka的访问路径
+eureka:
+  client:
+  service-url:
+    defaultZone: http://root01:root01@localhost:5121/eureka
+
+
+

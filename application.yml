@@ -1,8 +1,8 @@
-```
+
 spring:
   profiles:
     active: dev
-    
+  
 ---
 spring:
   application:
@@ -13,5 +13,5 @@ spring:
   application:
     name: test
   profiles: test
-```
+
 

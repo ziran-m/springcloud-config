@@ -1,0 +1,17 @@
+```
+spring:
+  profiles:
+    active: dev
+    
+---
+spring:
+  application:
+    name: dev
+  profiles: dev
+---  
+spring:
+  application:
+    name: test
+  profiles: test
+```
+
